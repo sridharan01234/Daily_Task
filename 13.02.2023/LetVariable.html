@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="buttonA">Hit Me</button>
+    <h2 id="para"></h2>
+    <script>
+        const ButtonA = document.querySelector('#buttonA');
+        document.getElementById("buttonA").addEventListener("click", EnterName);
+        function EnterName() {
+            const name = prompt("Enter Your Good Name Lad");
+            alert(`Hello ${name}, nice to see you!`);
+            document.getElementById("para").innerHTML = name;
+        }
+    </script>
+</body>
+</html>

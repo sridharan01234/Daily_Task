@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <p>Guess The Number</p>
+    <button onclick="GameStart()" id="player">Start The Game</button>
+    <script>
+        function GameStart() {
+            const Guess = Math.round(Math.random(1,100)*100);
+        const para = document.getElementById("player");
+        para.addEventListener('click', updateName);
+
+        function updateName() {
+            const name = prompt('Enter your Guess');
+            if(name===Guess) para.textContent = `Correct`;
+            else para.textContent = `Wrong`;
+            const par = document.createElement('p');
+                par.textContent = Guess;
+                // document.body.appendChild(par);
+        }
+        }
+    </script>
+</body>
+
+</html>
