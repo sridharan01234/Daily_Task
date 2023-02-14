@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Simple switch example</title>
+</head>
+
+<body >
+    <label id="bck" for="weather">Select the Background color You Want </label>
+    <select id="weather">
+        <option value="">--Make a choice--</option>
+        <option value="red">red</option>
+        <option value="yelloe">yellow</option>
+        <option value="brown">brown</option>
+        <option value="blue">blue</option>
+    </select>
+
+    <p></p>
+
+    <script>
+        const select = document.querySelector('select');
+        const para = document.querySelector('p');
+        const bdy = document.querySelector('#bck');
+        select.onchange = setWeather;
+
+        function setWeather() {
+            const choice = select.value;
+            document.body.style.backgroundColor = choice;
+        }
+    </script>
+</body>
+
+</html>
