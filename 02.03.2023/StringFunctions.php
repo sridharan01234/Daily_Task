@@ -39,6 +39,10 @@
     $arr2 = str_split($str, 3);
 
     print_r($arr1);
+    echo "<br>This example for echo ";
+    echo $arr1;
+    echo "<br>This is print function ";
+    print($arr1);
     echo "<br>";
     print_r($arr2);
     ?>
