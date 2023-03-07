@@ -1,24 +1,16 @@
 <?php
-if ($_SERVER['PHP_AUTH_USER'] !== "admin" || $_SERVER['PHP_AUTH_PW'] !== "123") {
-    header("WWW-Authenticate: Basic realm=\"enterDetails\"");
-    header("HTTP\ 1.0 401 Unauthorized");
-    exit;
-}
-
+$_SESSION['username'] = "Sridharan";
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-
-    <h1>I am visible Now</h1>
+    <h1>Seesion In PHP</h1>
+    <p>Username in this session is <?=$_SESSION['username']?></p>
 </body>
-
 </html>
