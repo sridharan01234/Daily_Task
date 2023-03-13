@@ -1,5 +1,5 @@
 <?php
-require 'NamespaceUtils.php';
+//require 'NamespaceUtils.php';
 use MyApp\Utils\Logger;
 use function MyApp\Utils\format_string;
 

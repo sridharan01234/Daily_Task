@@ -4,9 +4,9 @@ interface Animal {
 }
 
 class Cat implements Animal {
-  public function makeSound() {
-    echo "Meow <br>";
-  }
+  // public function makeSound() {
+  //   echo "Meow <br>";
+  // }
 }
 
   class Dog implements Animal {
@@ -16,7 +16,7 @@ class Cat implements Animal {
 }
 
 $cat = new Cat();
-$cat->makeSound();
+//$cat->makeSound();
 
 $dog = new Dog();
 $dog->makeSound();
